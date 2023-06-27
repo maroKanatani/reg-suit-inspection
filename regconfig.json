@@ -2,7 +2,7 @@
   "core": {
     "workingDir": ".reg",
     "actualDir": "__screenshots__",
-    "thresholdRate": 0,
+    "thresholdRate": 50,
     "ximgdiff": {
       "invocationType": "client"
     }
@@ -16,6 +16,9 @@
     },
     "reg-publish-s3-plugin": {
       "bucketName": "$AWS_BUCKET_NAME"
+    },
+    "reg-notify-slack-plugin": {
+      "webhookUrl": "your_incoming_webhook_url"
     }
   }
 }
